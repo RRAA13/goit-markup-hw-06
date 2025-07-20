@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="WebStudio for Your Business">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Solutions for Your Business</title>
     <link
       rel="stylesheet"
@@ -23,10 +24,17 @@
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
+          <div class="logo-burger">
           <a class="logo header-logo" href="./index.html">
             Web
             <span class="logo-part">Studio</span>
           </a>
+          <button class="burger-menu-open-button" type="button" data-mob-modal-open>
+            <svg class="burger-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          </div>
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link current" href="./index.html">Studio</a>
@@ -48,8 +56,64 @@
               </a>
             </li>
           </ul>
-        </address>
+        </address> 
+        <div class="mob-menu" data-mob-modal>
+            <button class="burger-menu-close-button" type="button" data-mob-modal-close>
+          <svg class="mob-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+          </button>
+          <ul class="mob-nav-list">
+            <li class="mob-nav-item"><a class="mob-nav-link" href="./index.html">Studio</a></li>
+            <li class="mob-nav-item"><a class="mob-nav-link" href="">Portfolio</a></li>
+            <li class="mob-nav-item"><a class="mob-nav-link" href="">Contacts</a></li>
+          </ul>
+        <address class="mob-contacts">
+          <ul class="mob-contacts-list">
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-address" href="tel:+110001111111">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-address" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address> 
+        <ul class="mob-social-list">
+            <li class="mob-social-item">
+              <a href="./index.html" class="mob-social-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a href="./index.html" class="mob-social-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a href="./index.html" class="mob-social-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a href="./index.html" class="mob-social-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
       </div>
+    </div>
     </header>
     <main>
       <section class="hero-banner" id="banner">
@@ -57,7 +121,7 @@
           <h1 class="hero-banner-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="hero-banner-button">
+          <button type="button" class="hero-banner-button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -124,7 +188,8 @@
             <li class="team-item-list">
               <img
                 class="team-item-list-image"
-                src="./images/mark.jpg"
+                src="./images/markx1.jpg"
+                srcset="images/markx1.jpg 1x, images/markx2.jpg 2x"
                 width="264"
                 alt="Product Designer"
               >
@@ -166,7 +231,8 @@
             <li class="team-item-list">
               <img
                 class="team-item-list-image"
-                src="./images/tom.jpg"
+                src="./images/tomx1.jpg"
+                srcset="images/tomx1.jpg 1x, images/tomx2.jpg 2x"
                 width="264"
                 alt="Frontend Developer"
               >
@@ -208,7 +274,8 @@
             <li class="team-item-list">
               <img
                 class="team-item-list-image"
-                src="./images/camila.jpg"
+                src="./images/camilax1.jpg"
+                srcset="images/camilax1.jpg 1x, images/camilax2.jpg 2x"
                 width="264"
                 alt="Marketing"
               >
@@ -250,7 +317,8 @@
             <li class="team-item-list">
               <img
                 class="team-item-list-image"
-                src="./images/daniel.jpg"
+                src="./images/danielx1.jpg"
+                srcset="images/danielx1.jpg.jpg 1x, images/danielx2.jpg 2x"
                 width="264"
                 alt="UI Designer"
               >
@@ -300,7 +368,8 @@
               <div class="portfolio-card">
                 <img
                   class="portfolio-item-list-image"
-                  src="./images/banking_app.jpg"
+                  src="./images/bankingx1.jpg"
+                  srcset="images/bankingx1.jpg 1x, images/bankingx2.jpg 2x"
                   width="360"
                   alt="Banking App"
                 >
@@ -319,7 +388,8 @@
               <div class="portfolio-card">
                 <img
                   class="portfolio-item-list-image"
-                  src="./images/cashless_payment.jpg"
+                  src="./images/cashlessx1.jpg"
+                  srcset="images/cashlessx1.jpg 1x, images/cashlessx2.jpg 2x"
                   width="360"
                   alt="Cashless Payment"
                 >
@@ -338,7 +408,8 @@
               <div class="portfolio-card">
                 <img
                   class="portfolio-item-list-image"
-                  src="./images/meditation_app.jpg"
+                  src="./images/meditationx1.jpg"
+                  srcset="images/meditationx1 1x, images/meditationx2.jpg 2x"
                   width="360"
                   alt="Meditation App"
                 >
@@ -357,7 +428,8 @@
               <div class="portfolio-card">
                 <img
                   class="portfolio-item-list-image"
-                  src="./images/taxi_service.jpg"
+                  src="./images/taxix1.jpg"
+                  srcset="images/taxix1.jpg 1x, images/taxix2.jpg 2x"
                   width="360"
                   alt="Taxi Service"
                 >
@@ -376,7 +448,8 @@
               <div class="portfolio-card">
                 <img
                   class="portfolio-item-list-image"
-                  src="./images/screen_illustrations.jpg"
+                  src="./images/screenx1.jpg"
+                  srcset="images/screenx1.jpg 1x, images/screenx2.jpg 2x"
                   width="360"
                   alt="Screen Illustrations"
                 >
@@ -397,7 +470,8 @@
               <div class="portfolio-card">
                 <img
                   class="portfolio-item-list-image"
-                  src="./images/online_courses.jpg"
+                  src="./images/onlinex1.jpg"
+                  srcset="images/onlinex1.jpg 1x, images/onlinex2.jpg 2x"
                   width="360"
                   alt="Online Courses"
                 >
@@ -482,9 +556,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="close-button" type="button">
+        <button class="close-button" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -529,30 +603,33 @@
               class="form-textarea"
               name="user-comment"
               id="user-comment"
-              placeholder="Text input">
-            </textarea>
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="form-field checkbox">
-              <input
-                class="checkbox-input visually-hidden"
-                id="user-privacy"
-                type="checkbox"
-                value="true"
-                name="user-privacy"
-              >
-              <label class="checkbox-label" for="user-privacy">
+            <input
+              class="checkbox-input visually-hidden"
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+            >
+            <label class="checkbox-label" for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
+              <span>
               I accept the terms and conditions of the
               <a class="form-image" href="#" target="_blank">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="input-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
